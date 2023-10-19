@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head><title>Contact Us</title>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Baloo+Bhai+2&display=swap" rel="stylesheet"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    }
+    
+    /* CSS variables */
+    :root{
+        --navbar-hieght: 59px;
+    }
+body {
+	background-image:url("bgpic.jfif");
+	background-repeat:no-repeat;
+	background-size:cover;
+ 
+}
+#navbar{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+    }
+    
+    #navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity:-0.1;
+    }
+    
+    #logo{
+        margin: 10px 34px;;
+    
+    }
+    
+    #logo img{
+        margin: 3px 5px;
+        height: 60px;
+    }
+    
+    
+    #navbar ul{
+        display: flex;
+        font-family: 'Acme', sans-serif;
+    
+    }
+    
+    #navbar ul li{
+        list-style: none;
+        color:rgb(247, 236, 222);
+        font-size: 1.3rem;
+    }
+    #navbar ul li a{
+        color: #1b1717;
+        display: block;
+        padding: 3px 21px;
+        border-radius: 20px;
+        text-decoration: none;
+        
+    }
+    
+    #navbar ul li a:hover{
+        color: black;
+        background-color: brown;
+        
+    }
+	
+	.search-box{
+    border: 1px solid white;
+    border-radius: 50px;
+    background: white;
+    width: max-content;
+    display: inline-block;
+    margin: 8px;;
+}
+.search-box:hover{
+    box-shadow: 0 0 10px 2px #85550c9a;
+    border:1px solid #e4bf1b;
+}
+.search-input{
+    width: 250px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    margin: 15px 0 0 10px;
+}
+
+i{
+    font-size: 20px;
+    margin: 0 10px 0 0;
+    
+}
+button{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  float: left;
+  background-color:pink;
+  margin:10px 90px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+</style>
+<script>(function(w, d) { w.CollectId = "6320ce66ffa35460773fa517"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+</head>
+<body>
+<nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="MyGrocery">
+        </div>
+
+        <ul>
+            <li class="item"><a href="index.html#home">Home</a></li>
+           
+            <li class="item"><a href="naman.html#deals">Deals</a></li>
+            <li class="item"><a href="naman.html#vegetables">Vegetables</a></li>
+            <li class="item"><a href="naman.html#fruits">Fruits</a></li>
+            <li class="item"><a href="naman.html#dairy">Dairy</a></li>
+<!--             <li class="item"><a href="about-us.html#about-us">About us</a></li> -->
+            <li class="item"><a href="contact.html#contact">Contact us</a></li>
+            <li class="item"><a href="about-us.html">About Us</a></li>
+            
+        </ul>
+        <div class="search-box"> 
+            <form>
+                <input type="text" placeholder="Search..." name= "search" class="search-input"/>
+            <button type="submit"> <i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </nav>
+
+<h1 style="color:brown; text-align:center; font-size:4.5rem"><br>Contact Us</h1>
+<pre><h2 style="font-size:1.45rem"><br>       For queries or complaints, contact us here:
+
+</h2></pre>
+
+<div class="card">
+  <img src="instagram.png" alt="insta" style="width:100%">
+  <div class="container">
+    <h2 style="text-align:center"><b>Instagram</b></h2><br>
+	<h3 style="text-align:center"><a href="https://instagram.com/naman.gupta.104?igshid=MzRlODBiNWFlZA==">Farm Fresh Grocery</a></h3>
+  </div>
+</div>
+
+<div class="card">
+  <img src="email.png" alt="email" style="width:100%">
+  <div class="container">
+    <h2 style="text-align:center"><b>E-mail</b></h2><br>
+	<h3 style="text-align:center"><a href="https://mail.google.com/mail/u/0/#inbox">Email For Enquiry</a></h3>
+  </div>
+</div>
+
+<div class="card">
+  <img src="phone.png" alt="phone" style="width:100%">
+  <div class="container">
+    <h2 style="text-align:center"><b>Phone</b></h2><br>
+	<h3 style="text-align:center"><a href="https://web.whatsapp.com/">+91-7050817191</a></h3>
+  </div>
+</div>
+
+</body>
+</html> 

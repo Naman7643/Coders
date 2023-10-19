@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form Fillup</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="formstyle.css">
+<style>
+    body{
+        background-color: rgb(151, 151, 186);
+        
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Acme', sans-serif;
+    }
+    .order{
+        border: 2px solid black;
+        
+        margin: 39px 75px;
+        padding: 75px;
+        width: 45%;
+        border-radius: 28px;
+    }
+    .form-group input{
+        font-family: 'Acme', sans-serif;
+        display: block;
+        text-align: center;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+    }
+
+    .order h1{
+        text-align: center;
+        color: rgb(53 44 185);
+    }
+
+    .order button{
+        background: brown;
+        color: yellow;
+        display: block;
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    .order button:hover{
+        background: lightgreen;
+        color: black;
+        cursor: pointer;
+    }
+
+    video{
+        object-fit: cover;
+        width: 35%; 
+        height: 110%;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+    }
+
+
+</style>
+<body>
+    <video autoplay muted loop src="vege.mp4" id="Bgvid">
+    </video>
+    <div class="order">
+        <h1>Please Fillup The Required Details For Your Order</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Location">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Pincode">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Number">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Products You Want To Buy">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Quantity">
+            </div>
+            <button class="btn">Submit Now</button>
+        </form>
+
+    </div>
+</body>
+</html>
